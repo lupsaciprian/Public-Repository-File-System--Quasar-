@@ -48,7 +48,16 @@
 
 <script>
 export default {
-  props: ["gitUser", "gitRepo"],
+  props: {
+    gitUser: {
+      type: String,
+      required: true
+    },
+    gitRepo: {
+      type: String,
+      required: true
+    }
+  },
   data() {
     return {
       formVisible: true
